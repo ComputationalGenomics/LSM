@@ -105,9 +105,9 @@ There are three necessary inputs for the LSM.
 This is a CSV file with all relevant adjustable parameters and paths for the LSM. An example of the file is provided and
 the available parameters are as follows:
 
-- outputDir: path to directory that all output should be created
-- sampleFile: path to sample info CSV files 
-- mafFile: data file in a modified MAF format. By default the LSM runs in single-time point mode and analyzes all 
+- outputDir: [PATH TO OUTPUT FOLDER] path to directory that all output should be created
+- sampleFile: [PATH TO SAMPLE FILE] path to sample info CSV files 
+- mafFile: [PATH TO MAF FILE] data file in a modified MAF format. By default the LSM runs in single-time point mode and analyzes all 
   patients in the MAF file.
 - patientMulti: [NORMALIZED PATIENT ID] (primaryParticipantID) used to run LSM in longitudinal rather than single-time 
   point mode. This flag automatically engages this mode
