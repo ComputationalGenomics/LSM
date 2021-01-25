@@ -100,7 +100,7 @@ arguments:
 
 There are three necessary inputs for the LSM.
 
-####PARAMETER FILE
+#### PARAMETER FILE
 
 This is a CSV file with all relevant adjustable parameters and paths for the LSM. An example of the file is provided and
 the available parameters are as follows:
@@ -132,7 +132,7 @@ the available parameters are as follows:
   uniform distribution.
 
 
-####Mutation MAF FILE
+#### Mutation MAF FILE
 
 The LSM expects a modified, compiled MAF file of all patient data to be analyzed 
 with the following minimal fields containing the following:
@@ -147,7 +147,7 @@ with the following minimal fields containing the following:
 - 'File': Original MAF filename from which the mutation is compiled from. 
 
 
-####SAMPLE INFO FILE
+#### SAMPLE INFO FILE
 
 The sample info file contains relevant clincial information in a CSV format with the folloowing minimal fields:
 - 'primaryParticipantID': normalized patient ID
