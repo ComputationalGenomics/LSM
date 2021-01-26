@@ -113,7 +113,8 @@ the available parameters are as follows:
   point mode. This flag automatically engages this mode
 - simPatient: [NORMALIZED PATIENT ID] (primaryParticipantID) on which to perform a simulation. This flag automatically 
   engages this mode.
-- simPatientIndex: [INTEGER] If running in simulation mode, then providing this INTEGER allows the tracking of multiple 
+- simPatientIndex: [ARRAY] If running in simulation mode, then providing this ARRAY provides the start and end of the range
+  for the number of total simulations to run.
   simulations for the same patient.
 - nthreads: [INTEGER] number of threads
 - subSampleSize: [INTEGER] number of lesions to subsample k
@@ -164,17 +165,16 @@ The sample info file contains relevant clincial information in a CSV format with
 
 ## Output
 
-The LSM produces an output directory as specified in the parameters file with all results. Each subsampling run indicated
-by the *startIndex* and *endIndex* with a separate folder *Run[XXX]*. Pickle objects containing the HB objects and computed distances are created
-for each patient as well as a compiled pickle object of all the patients. A cross run comparison is performed and the top 
-HB from each run is compiled into a single *CrossComparisonWithinHB***.pkl*. Finally the consensus graph is output into the
-folder *ConsensusDirectedNetwork_lesionOrdering*. HTML graph objects for the simplified and detailed networks are generated.
-In addition, CSV files describing the graph topology per patient are output. 
+The LSM produces an output directory as specified in the parameters file with the final consensus results. The parameters file
+is copied into the output directory. *ConsensusDirectedNetwork_lesionOrdering* contains the consensus shedding results.
+PNG graph images for the simplified and detailed networks are produced. In addition, CSV files describing the graph topologies
+as well as network files to ease import into other graphing packages are provided. 
 
 If the LSM is run in the longitudinal mode, then all output files are keyed by the specific cfDNA sample ID being analyzed.
 
-If the LSM is run in simulation mode then all simulated runs for a given *simRunIndex* are output into folder *SimRun[XXX]*,
-including *Run[XXX]* and *ConsensusDirectedNetwork_lesionOrdering*.
+If the LSM is run in simulation mode then all simulated runs for a given *simRunIndex* are output into folder *SimRun[XXX]*.
+This folder also contains a pickle object of the simulated clinical data and CSV of simulated MAF data for the respective
+simulation. *ConsensusDirectedNetwork_lesionOrdering* is created within each.
 
 <!-- CONTACT -->
 ## Contact
