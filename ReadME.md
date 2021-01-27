@@ -66,7 +66,7 @@ To download please run:
 The command to run LSM is simply
 
 ```
-./LSM --params <parameter_file> --mafFile <input_maf_file>
+./LSM --params <parameter_file>
 ```
 
 This will run it by default in single time point mode where it develops a lesion shedding model each patient in the 
