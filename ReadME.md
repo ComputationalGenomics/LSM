@@ -14,7 +14,6 @@
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
-        <li><a href="#requirements">Requirements</a></li>
         <li><a href="#download">Download</a></li>
       </ul>
     </li>
@@ -53,18 +52,6 @@ contributions to ctDNA.
 ## Getting Started
 
 To get a local copy up and running follow these simple example steps.
-
-### Requirements
-
-The following software is required for LSM:
-
-- matplotlib (>3.3.2)
-- numpy (>1.19.2)
-- pandas (>1.2.0)
-- plotly (>4.14.2)
-- scipy (>1.5.2)
-- seaborn (>0.11.1)
-- scikit-learn (>0.22.1)
 
 ### Download
 
