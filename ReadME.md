@@ -172,4 +172,4 @@ please feel free to contact: Laxmi Parida <parida@us.ibm.com> or Kahn Rhrissorra
 <!-- LICENSE -->
 ## License
 
-See [LICENSE](https://github.com/ComputationalGenomics/LSM/blob/main/license) for license information.
+See [LICENSE](https://github.com/ComputationalGenomics/LSM/blob/master/license) for license information.
